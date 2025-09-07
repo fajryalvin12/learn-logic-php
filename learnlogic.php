@@ -167,4 +167,26 @@ class transaction {
 
     }
 
+    // Challenge 8
+    function formatPhoneNumber(string $number) {
+        $len = strlen($number);
+
+        $num = array();
+
+        for ($i = 0; $i < $len; $i++) {
+            if ($i !== 0 && $i % 4 === 0) {
+                $num[] = "-" . $number[$i];
+            } else {
+                $num[] = $number[$i];
+            }
+        }
+
+        return implode("", $num);
+    }
+
+    // Challenge 9
+    function reverseNumber(int $number) {
+        
+    }
+
 }
